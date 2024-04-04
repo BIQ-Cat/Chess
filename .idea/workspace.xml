@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a73fb03-94ca-4d55-ae55-7c5e8cdb0399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Chess.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/board.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/color.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/print_board.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figures/figure.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figures/pawn_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="7a73fb03-94ca-4d55-ae55-7c5e8cdb0399" name="Changes" comment="Added basic functionality">
+      <change afterPath="$PROJECT_DIR$/figures/knight.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/pawn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/rook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/pawn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pawn_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -72,9 +66,20 @@
       <option name="presentableId" value="Default" />
       <updated>1711975501362</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added basic functionality">
+      <option name="closed" value="true" />
+      <created>1711977965382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711977965382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added basic functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic functionality" />
   </component>
 </project>

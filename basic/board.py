@@ -1,5 +1,8 @@
 import color
 from figures.figure import Figure
+from figures.knight import Knight
+from figures.pawn import Pawn
+from figures.rook import Rook
 
 
 def coords_are_correct(row: int, col: int) -> bool:
@@ -10,9 +13,22 @@ class Board:
     def __init__(self):
         self.color = color.WHITE
         self.field = []  # type: list[list[Figure | None]]
-        for row in range(8):
+
+        for _ in range(8):
             self.field.append([None] * 8)
-        self.field[1][4] = Pawn(1, 4, color.WHITE)
+
+        self.field[1] = [Pawn(1, i, color.WHITE) for i in range(8)]
+        self.field[7] = [Pawn(7, i, color.BLACK) for i in range(8)]
+
+        self.field[0][0] = Rook(0, 0, color.WHITE)
+        self.field[0][1] = Knight(0, 1, color.WHITE)
+        self.field[0][6] = Knight(0, 6, color.WHITE)
+        self.field[0][7] = Rook(0, 7, color.WHITE)
+
+        self.field[7][0] = Rook(7, 0, color.BLACK)
+        self.field[0][1] = Knight(0, 1, color.BLACK)
+        self.field[0][6] = Knight(0, 6, color.BLACK)
+        self.field[7][7] = Rook(7, 7, color.BLACK)
 
     def current_player_color(self):
         return self.color

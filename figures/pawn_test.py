@@ -1,8 +1,10 @@
 import unittest
 
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
+class TestPawn(unittest.TestCase):
+    def __init__(self):
+        self.pawn = Pawn()
+        super().__init__()
         self.assertEqual(True, False)  # add assertion here
 
 
