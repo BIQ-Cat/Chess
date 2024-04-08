@@ -1,3 +1,4 @@
+import basic.board
 from figures.figure import Figure
 
 
@@ -9,16 +10,16 @@ class Knight(Figure):
     def char(self) -> str:
         return 'N'
 
-    def can_move_by_shift(self, row, col, shift_row, shift_col):
-        return row - shift_row == self.row and col - shift_col == self.col or \
-                row + shift_row == self.row and col - shift_col == self.col or \
-                row - shift_row == self.row and col + shift_col == self.col or \
-                row - shift_row == self.row and col - shift_col == self.col
+    @staticmethod
+    def __can_move_by_shift(row_from: int, col_from: int, row_to: int, col_to: int, shift_row: int, shift_col: int):
+        return row_to - shift_row == row_from and col_to - shift_col == col_from or \
+                row_to + shift_row == row_from and col_to - shift_col == col_from or \
+                row_to - shift_row == row_from and col_to + shift_col == col_from or \
+                row_to - shift_row == row_from and col_to - shift_col == col_from
 
-    def can_move(self, row: int, col: int) -> bool:
-        if not coords_are_correct(row, col):
-            return False
+    def can_move(self, board: basic.board.Board, row_from: int, col_from: int, row_to: int, col_to: int) -> bool:
+
         shift_row = 2
         shift_col = 1
-        return self.can_move_by_shift(row, col, shift_row, shift_col) or \
-            self.can_move_by_shift(row, col, shift_col, shift_row)
+        return Knight.__can_move_by_shift(row_from, col_from, row_to, col_to, shift_row, shift_col) or \
+            Knight.__can_move_by_shift(row_from, col_from, row_to, col_to, shift_col, shift_row)

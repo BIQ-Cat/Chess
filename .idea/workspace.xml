@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a73fb03-94ca-4d55-ae55-7c5e8cdb0399" name="Changes" comment="Created queen, bishop and king">
+    <list default="true" id="7a73fb03-94ca-4d55-ae55-7c5e8cdb0399" name="Changes" comment="Changed architecture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/bishop.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/bishop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/knight.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/knight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/pawn.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pawn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/rook.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/rook.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +92,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712583009431</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed architecture">
+      <option name="closed" value="true" />
+      <created>1712583939478</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712583939478</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added basic functionality" />
     <MESSAGE value="Created queen, bishop and king" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created queen, bishop and king" />
+    <MESSAGE value="Changed architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed architecture" />
   </component>
 </project>
