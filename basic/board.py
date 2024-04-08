@@ -1,8 +1,10 @@
 import color
 from figures.bishop import Bishop
 from figures.figure import Figure
+from figures.king import King
 from figures.knight import Knight
 from figures.pawn import Pawn
+from figures.queen import Queen
 from figures.rook import Rook
 
 
@@ -18,22 +20,13 @@ class Board:
         for _ in range(8):
             self.field.append([None] * 8)
 
-        self.field[1] = [Pawn(1, i, color.WHITE) for i in range(8)]
-        self.field[7] = [Pawn(7, i, color.BLACK) for i in range(8)]
+        self.field[1] = [Pawn(color.WHITE) for _ in range(8)]
+        self.field[7] = [Pawn(color.BLACK) for _ in range(8)]
 
-        self.field[0][0] = Rook(0, 0, color.WHITE)
-        self.field[0][1] = Knight(0, 1, color.WHITE)
-        self.field[0][2] = Bishop(0, 2, color.WHITE)
-        self.field[0][5] = Bishop(0, 6, color.WHITE)
-        self.field[0][6] = Knight(0, 6, color.WHITE)
-        self.field[0][7] = Rook(0, 7, color.WHITE)
-
-        self.field[7][0] = Rook(7, 0, color.BLACK)
-        self.field[7][1] = Knight(7, 1, color.BLACK)
-        self.field[7][2] = Bishop(7, 2, color.BLACK)
-        self.field[7][5] = Bishop(7, 6, color.BLACK)
-        self.field[7][6] = Knight(7, 6, color.BLACK)
-        self.field[7][7] = Rook(7, 7, color.BLACK)
+        self.field[0] = [Rook(color.WHITE), Knight(color.WHITE), Bishop(color.WHITE), Queen(color.WHITE),
+                         King(color.WHITE), Bishop(color.WHITE), Knight(color.WHITE), Rook(color.WHITE)]
+        self.field[7] = [Rook(color.BLACK), Knight(color.BLACK), Bishop(color.BLACK), Queen(color.BLACK),
+                         King(color.BLACK), Bishop(color.BLACK), Knight(color.BLACK), Rook(color.BLACK)]
 
     def current_player_color(self):
         return self.color
@@ -52,15 +45,24 @@ class Board:
             return False
         if row_from == row_to and col_from == col_to:
             return False
+
         piece = self.field[row_from][col_from]
+
         if piece is None:
             return False
         if piece.get_color() != self.color:
             return False
-        if not piece.can_move(row_to, col_to):
+
+        if self.field[row_to][col_to] is None:
+            if not piece.can_move(self, row_from, col_from, row_to, col_to):
+                return False
+        elif self.field[row_to][col_to].get_color() == color.opponent(piece.get_color()):
+            if not piece.can_attack(self, row_from, col_from, row_to, col_to):
+                return False
+        else:
             return False
+
         self.field[row_from][col_from] = None
         self.field[row_to][col_to] = piece
-        piece.set_position(row_to, col_to)
         self.color = color.opponent(self.color)
         return True
