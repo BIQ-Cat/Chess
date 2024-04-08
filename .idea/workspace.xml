@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a73fb03-94ca-4d55-ae55-7c5e8cdb0399" name="Changes" comment="Added basic functionality">
-      <change afterPath="$PROJECT_DIR$/figures/knight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figures/pawn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/figures/rook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/bishop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/figures/queen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Chess.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/board.py" beforeDir="false" afterPath="$PROJECT_DIR$/basic/board.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/figure.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/pawn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pawn_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/pawn_test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AnDev58"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/BIQ-Cat/Chess.git",
+    "accountId": "1d9ef12c-9140-429d-b22e-5389417acd35"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -53,7 +64,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>

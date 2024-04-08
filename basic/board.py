@@ -1,4 +1,5 @@
 import color
+from figures.bishop import Bishop
 from figures.figure import Figure
 from figures.knight import Knight
 from figures.pawn import Pawn
@@ -22,12 +23,16 @@ class Board:
 
         self.field[0][0] = Rook(0, 0, color.WHITE)
         self.field[0][1] = Knight(0, 1, color.WHITE)
+        self.field[0][2] = Bishop(0, 2, color.WHITE)
+        self.field[0][5] = Bishop(0, 6, color.WHITE)
         self.field[0][6] = Knight(0, 6, color.WHITE)
         self.field[0][7] = Rook(0, 7, color.WHITE)
 
         self.field[7][0] = Rook(7, 0, color.BLACK)
-        self.field[0][1] = Knight(0, 1, color.BLACK)
-        self.field[0][6] = Knight(0, 6, color.BLACK)
+        self.field[7][1] = Knight(7, 1, color.BLACK)
+        self.field[7][2] = Bishop(7, 2, color.BLACK)
+        self.field[7][5] = Bishop(7, 6, color.BLACK)
+        self.field[7][6] = Knight(7, 6, color.BLACK)
         self.field[7][7] = Rook(7, 7, color.BLACK)
 
     def current_player_color(self):
